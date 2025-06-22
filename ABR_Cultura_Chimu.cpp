@@ -13,3 +13,5 @@ void inorden(Nodo* raiz) {
     cout << raiz->id << " - " << raiz->nombre << endl;
     inorden(raiz->derecha);
 }
+
+//funcion de eliminacion
