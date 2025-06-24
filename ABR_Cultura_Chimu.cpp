@@ -24,7 +24,7 @@ void postorden(Nodo* raiz) {
     cout << raiz->id << " - " << raiz->nombre << endl;
 }
 // --------------------------------------------------
-//INTEGRANTE: JOHAN AIME LOPEZ
+
 // --------------------------------------------------
 //funcion de eliminacion
 Nodo* encontrarMin(Nodo* raiz) {
