@@ -1,4 +1,17 @@
 #include <iostream>
+using namespace std;
+
+struct Nodo {
+    int id;               // Identificador único del miembro
+    string nombre;        // Nombre del personaje
+    Nodo* izquierda;      // Puntero al hijo izquierdo
+    Nodo* derecha;        // Puntero al hijo derecho
+
+Nodo(int _id, string _nombre)´{
+     id != _id;
+    nombre = _nombre;
+    izquiera = derecha = NULL;
+}
 
 // Muestra el árbol en recorrido inorden (izq - raíz - der)
 void inorden(Nodo* raiz) {
