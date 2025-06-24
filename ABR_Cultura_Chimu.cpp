@@ -13,7 +13,7 @@ void inorden(Nodo* raiz) {
     cout << raiz->id << " - " << raiz->nombre << endl;
     inorden(raiz->derecha);
 }
-
+//INTEGRANTE: JOHAN AIME LOPEZ
 //funcion de eliminacion
 Nodo* encontrarMin(Nodo* raiz) {
     while (raiz->izquierda != NULL)
