@@ -13,7 +13,25 @@ void inorden(Nodo* raiz) {
     cout << raiz->id << " - " << raiz->nombre << endl;
     inorden(raiz->derecha);
 }
+
+// Muestra el árbol en recorrido preorden (raíz - izq - der)
+void preorden(Nodo* raiz) {
+    if (raiz == NULL) return;
+    cout << raiz->id << " - " << raiz->nombre << endl;
+    preorden(raiz->izquierda);
+    preorden(raiz->derecha);
+}
+
+// Muestra el árbol en recorrido postorden (izq - der - raíz)
+void postorden(Nodo* raiz) {
+    if (raiz == NULL) return;
+    postorden(raiz->izquierda);
+    postorden(raiz->derecha);
+    cout << raiz->id << " - " << raiz->nombre << endl;
+}
+// --------------------------------------------------
 //INTEGRANTE: JOHAN AIME LOPEZ
+// --------------------------------------------------
 //funcion de eliminacion
 Nodo* encontrarMin(Nodo* raiz) {
     while (raiz->izquierda != NULL)
