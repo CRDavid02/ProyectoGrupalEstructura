@@ -7,10 +7,10 @@ struct Nodo {
     Nodo* izquierda;      // Puntero al hijo izquierdo
     Nodo* derecha;        // Puntero al hijo derecho
 
-Nodo(int _id, string _nombre)´{
+Nodo(int _id, string _nombre){
      id != _id;
     nombre = _nombre;
-    izquiera = derecha = NULL;
+    izquierfa = derecha = NULL;
 }
 
 // Muestra el árbol en recorrido inorden (izq - raíz - der)
