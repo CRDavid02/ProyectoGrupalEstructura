@@ -12,7 +12,29 @@ Nodo(int _id, string _nombre){
     nombre = _nombre;
     izquierfa = derecha = NULL;
 }
+// Inserta un nuevo miembro al árbol según su ID
+Nodo* insertar(Nodo* raiz, int id, string nombre) {
+    if (raiz == NULL)
+        return new Nodo(id, nombre);
 
+    if (id < raiz->id)
+        raiz->izquierda = insertar(raiz->izquierda, id, nombre);
+    else
+        raiz->derecha = insertar(raiz->derecha, id, nombre);
+
+    return raiz;
+}
+
+// Busca si un miembro con ID específico existe en el árbol
+bool buscar(Nodo* raiz, int id) {
+    if (raiz == NULL) return false;
+    if (raiz->id == id) return true;
+
+    if (id < raiz->id)
+        return buscar(raiz->izquierda, id);
+    else
+        return buscar(raiz->derecha, id);
+}
 // Muestra el árbol en recorrido inorden (izq - raíz - der)
 void inorden(Nodo* raiz) {
     if (raiz == NULL) return;
