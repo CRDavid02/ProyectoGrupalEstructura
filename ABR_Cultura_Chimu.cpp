@@ -11,7 +11,8 @@ Nodo(int _id, string _nombre){
      id != _id;
     nombre = _nombre;
     izquierfa = derecha = NULL;
-}
+    }
+};
 
 // Muestra el árbol en recorrido inorden (izq - raíz - der)
 void inorden(Nodo* raiz) {
