@@ -10,7 +10,7 @@ struct Nodo {
 Nodo(int _id, string _nombre){
      id != _id;
     nombre = _nombre;
-    izquierfa = derecha = NULL;
+    izquierda = derecha = NULL;
     }
 };
 
